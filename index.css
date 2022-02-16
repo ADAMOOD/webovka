@@ -1,0 +1,166 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  width: 100%;
+}
+/*scrollbar*/
+body::-webkit-scrollbar
+{
+  width: 0.5rem;
+}
+body::-webkit-scrollbar-track
+{
+  background: #f1f1f1;
+}
+body::-webkit-scrollbar-thumb
+{
+  background: #ff802c;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-left {
+float: left;
+ }
+ ::-moz-selection { 
+  color: #ff6000;
+  background: rgb(58, 54, 54);
+}
+
+::selection {
+  color: #ff6000;
+  background: rgb(58, 54, 54);
+}
+
+
+#logo
+{
+    width: 60px;
+}
+.btn
+{
+    transition: 0.5s;
+}
+.btn:hover {
+    background-color: #ff864ee1;
+    color: white;
+  }
+  .btn{
+      margin-top: 12px;
+  }
+  h1{
+      text-align: center;
+      font-size: 3em;
+  }
+
+  nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+
+  @media screen and (max-width: 905px) 
+  {
+  
+    #logo_media
+    {
+      float:none;
+      margin:   auto;
+      width: 60px;
+    }
+
+    /*hamburger a všechno okolo toho*/
+    .header-left {
+      float: none;  
+      }
+    .header a {
+      float: none;
+      display: block;
+      
+    }
+
+    #odkazy
+    {
+      display: none;
+      flex-wrap: wrap;
+      transition: 0.4s;
+    }
+ 
+    .burger {
+      display: inline-block;
+      cursor: pointer;
+      margin: auto;
+      width: 35px;
+      float: none;
+    }
+
+    .bar1, .bar2, .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: #ff6000;
+      margin: 6px 0;
+      transition: 0.4s;
+    }
+    
+    .change .bar1 {
+      -webkit-transform: rotate(-55deg) translate(-17px, 6px) scale(0.5,1)  ;
+      transform: rotate(-50deg) translate(-18px, 6px) scale(0.6,1) ;
+    
+    }
+    .btn{
+      width: 100%;
+      margin: auto;
+      text-align: center;
+    }
+    #odkazy.show{
+      display: block;
+     width: 100%;
+     transition: 0.4s ease;
+     }
+    #odkazy .btn .show{
+      -webkit-transform: translate(-8px, -8px);
+      transform:  translate(0px, 20px);    
+}
+    .btn .show{
+      display: block;
+      margin: auto;
+      text-align: center;
+      width: 100%;
+      float: none;
+
+    }
+    .change .bar2 {
+      opacity: 0;
+    }
+    
+    .change .bar3 {
+      -webkit-transform: rotate(55deg) translate(-8px, -8px);
+      transform: rotate(55deg) translate(-8px, -8px);
+    }
+    /*konec hamburger a všechno okolo toho*/
+    
+  }
