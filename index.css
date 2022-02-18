@@ -81,11 +81,53 @@ float: left;
     justify-content: space-between;
     width: 100%;
   }
-
-
+  .prvni, .druhy{
+    width: 50%;
+   margin: auto 0 auto 0;
+   text-align: center;
+  }
+  .prvni{
+    margin-left: 40px;
+  }
+  .druhy{
+    float: right;
+  }
+  #gordon{
+    width: 100%;
+    float: right;
+    -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+    -webkit-mask-size: 100% ;
+    -webkit-mask-position: left top, left bottom;
+    mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));;
+    mask-position: left top, left bottom;
+    mask-size: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+  }
   @media screen and (max-width: 905px) 
   {
-  
+    .prvni, .druhy{
+      width: 50%;
+     margin: auto;
+     text-align: center;
+    }
+    #gordon{
+      width: 70%;
+      float: none;
+      margin: auto;
+
+      display: block;
+      
+    }
+    .container{
+      display: block;
+    }
     #logo_media
     {
       float:none;
