@@ -74,6 +74,10 @@ float: left;
   h1{
       text-align: center;
       font-size: 3em;
+      margin-block-start: 0;
+    margin-block-end: 0.7em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
   }
 
   nav{
@@ -83,16 +87,14 @@ float: left;
   }
   .prvni, .druhy{
     width: 50%;
-   margin: auto 0 auto 0;
+   margin: auto 60px  auto 60px;
    text-align: center;
   }
-  .prvni{
-    margin-left: 40px;
-  }
+
   .druhy{
     float: right;
   }
-  #gordon{
+.img_fadel{
     width: 100%;
     float: right;
     -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
@@ -101,19 +103,34 @@ float: left;
     mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));;
     mask-position: left top, left bottom;
     mask-size: 100%;
-    margin-top: 10px;
-    margin-bottom: 20px;
+  
+    
+  }
+  .img_fader{
+    float: right;
+   width: 49%;
+   float: right;
+   -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+   -webkit-mask-size: 100% ;
+   -webkit-mask-position: left top, left bottom;
+   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));;
+   mask-position: left top, left bottom;
+   mask-size: 100%;
   }
   .container {
     display: flex;
     align-items: center;
     justify-content: center;
-  
+  background-color: #b9b9b9;
+  margin-bottom: 5rem;
   }
+  /*background*/
+  
+  /*backgroun\*/
   @media screen and (max-width: 905px) 
   {
     .prvni, .druhy{
-      width: 50%;
+      width: 70%;
      margin: auto;
      text-align: center;
     }
