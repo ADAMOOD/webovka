@@ -1,3 +1,4 @@
+
 function funkce_burger(x) {
     x.classList.toggle("change");
 

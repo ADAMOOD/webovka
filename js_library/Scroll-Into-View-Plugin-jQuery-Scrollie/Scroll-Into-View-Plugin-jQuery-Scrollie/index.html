@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>jQuery Scrollie Plugin Demo</title>
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Coming Soon', cursive;
+  transition: background 1s ease;
+  background: #3498db;
+}
+p {
+  color: #ecf0f1;
+  font-size: 2em;
+  text-align: center;
+}
+span {
+  clear: both;
+  font-size: .7em;
+  color: #bdc3c7;
+}
+a {
+  color: #c0392b;
+  text-decoration: none;
+}
+.slide .inside {
+  display: table;
+  height: 100%;
+  width: 100%;
+  padding: 0 3em;
+}
+.slide .inside p {
+  display: table-cell;
+  width: 100%;
+  clear: both;
+  vertical-align: middle;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+<div class="main-wrapper">
+  
+  <div class="slide slide-one" data-background="#3498db">
+    <div class="inside">
+    <p>jQuery Scrollie Plugin <br>
+<br>
+<i class="fa fa-angle-down"></i></p>
+    </div>
+  </div>
+  <div class="slide slide-two" data-background="#27ae60">
+    <div class="inside">
+      <p>Keep Scrolling</p>
+    </div>
+  </div>
+  <div class="slide slide-three" data-background="#e74c3c">
+    <div class="inside">
+      <p>Keep Scrolling</p>
+    </div>
+  </div>
+  <div class="slide slide-four" data-background="#e67e22">
+    <div class="inside">
+      <p>Keep Scrolling</p>
+    </div>
+  </div>
+  <div class="slide slide-five" data-background="#9b59b6">
+    <div class="inside">
+      <p>Keep Scrolling</p>
+    </div>
+  </div>
+  
+  <div class="slide slide-five" data-background="#34495e">
+    <div class="inside">
+      <p>Last Section</p>
+    </div>
+  </div>
+  
+</div>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="jquery.scrollie.js"></script>
+<script>
+/**
+ * This was built using the scrollie jQuery Plugin
+ * https://github.com/Funsella/jquery-scrollie
+ */
+
+
+$( window ).ready(function() {
+  
+    var wHeight = $(window).height();
+
+    $('.slide')
+      .height(wHeight)
+      .scrollie({
+        scrollOffset : -50,
+        scrollingInView : function(elem) {
+                   
+          var bgColor = elem.data('background');
+          
+          $('body').css('background-color', bgColor);
+          
+        }
+      });
+
+  });
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</body>
+</html>

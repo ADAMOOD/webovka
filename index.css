@@ -89,6 +89,7 @@ float: left;
     width: 50%;
    margin: auto 60px  auto 60px;
    text-align: center;
+
   }
 
   .druhy{
@@ -121,7 +122,7 @@ float: left;
     display: flex;
     align-items: center;
     justify-content: center;
-  background-color: #b9b9b9;
+  background-color: #e0e0e0;
   margin-bottom: 5rem;
   }
   /*background*/
