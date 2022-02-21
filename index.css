@@ -3,7 +3,9 @@
 body { 
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
+
 
 .header {
   overflow: hidden;
@@ -91,7 +93,9 @@ float: left;
    text-align: center;
 
   }
-
+.main{
+  overflow: hidden;
+}
   .druhy{
     float: right;
   }
@@ -121,7 +125,7 @@ float: left;
   .container {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
   background-color: #e0e0e0;
   margin-bottom: 5rem;
   }
