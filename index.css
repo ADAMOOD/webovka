@@ -113,7 +113,7 @@ float: left;
   }
   .img_fader{
     float: right;
-   width: 49%;
+   width: 100%;
    float: right;
    -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
    -webkit-mask-size: 100% ;
@@ -126,7 +126,7 @@ float: left;
     display: flex;
     align-items: center;
     justify-content: space-between;
-  background-color: #e0e0e0;
+  background-color: #dadada;
   margin-bottom: 5rem;
   }
   /*background*/
@@ -135,16 +135,23 @@ float: left;
   @media screen and (max-width: 905px) 
   {
     .prvni, .druhy{
-      width: 70%;
-     margin: auto;
+      width:fit-content;
+     margin: auto 6em ;
      text-align: center;
+     display: inline-block;
     }
-    #gordon{
-      width: 70%;
+    .img_fadel{
+      width: 50%;
       float: none;
       margin: auto;
-
       display: block;
+      /*fade from right side becouse of cuted area*/
+      -webkit-mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+   -webkit-mask-size: 100% ;
+   -webkit-mask-position: left top, left bottom;
+   mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));;
+   mask-position: left top, left bottom;
+   mask-size: 100%;
       
     }
     .container{
