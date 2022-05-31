@@ -1,7 +1,6 @@
 
 function funkce_burger(x) {
     x.classList.toggle("change");
-
     const hamburger=document.getElementsByClassName('burger');
     const nav_odkazy=document.getElementById('odkazy');
     const odkaz=document.getElementsByClassName('btn');
@@ -12,8 +11,6 @@ function funkce_burger(x) {
       {
         odkaz[i].classList.toggle('show');
       }
-     
-    
     }
   }
 

@@ -1,83 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css".css">
-    <link rel="stylesheet" href="domu.css".css>
-    <title>Document</title>
-    <script src="js_library/jquery-3.6.0.js"></script>
-    <script src="js_library/scrollie/jquery.scrollie.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>  
-    <script>
-      window.onload = () => {
-        AOS.init({
-          delay: 100, // values from 0 to 3000, with step 50ms
-          duration: 1000,// values from 0 to 3000, with step 50ms
-          offset:50 
-        });
-      };
-    </script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<body>
- 
-  <script src="index.js"></script>
-    <div class="header">
-        
-      <div id="logo_media">
-        <a href="index.html" class="logo"><img id="logo" src="spsei.svg" alt="logo" ></a>
-      </div>  
-      <div class="burger" onclick="funkce_burger(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-      </div>
-      <div class="header-left">
-        <nav id="odkazy">
-          <a class="btn" href="index.html">Domů</a>
-          <a class="btn" href="Half-Life.html">Half-Life</a>
-          <a class="btn" href="#Half-Life">Half-Life 2</a>
-          <a class="btn" href="#Half-Life">Half-Life 2 epizoda 1</a>
-          <a class="btn" href="#Half-Life">Half-Life 2 epizoda 2</a>
-          <a class="btn" href="#Half-Life">Half-Life: Alyx</a>
-        </nav>
-         
-        </div>
-      </div>
-      <div class="main">
-       
-            <h1>O projektu</h1>
-          
-            <div class="col" data-aos="fade-up" data-aos-offset="100">
-                Tuto webovou stránku vytvářím, protože mě celkově baví téma jaké se okolo herní 
-                série Half-Life točí a celkově herní témata. O Half-Lifu jsem 
-                se poprvé dozvěděl když můj starší brácha hral originalni Half-Life
-                z roku 1998 a od začátku jsem si ho zamiloval. Potom jsem ho viděl hrát i následující
-                datadisky a Half-Life 2. V té době jsem byl ještě malýtykže jsem tomu moc 
-                nepřikládal nějakou váhu. Tu hru jsem vlastně ani nehrál, jenom jsem občas sledoval 
-                bráchu jak ji hrál. V roce 2012 přišel zlom když na svůj Youtube kanál SmusaGames 
-                nahál Smusa svojí legendární let's play sérii hry Black Mesa, což je fanouškovský remake
-                původního Half-Lifu. Od této doby jsem si celou sérii half life zamiloval o to více.
-                Skvělý gameplay a komentář Smusy mě jako malého neskutečně bavil. Smusovu Black mesu jsem
-                sledoval pořád dokola a o to více jsem byl šťastnější, když jsem zjistil že v létě roku 2014
-                vydal první epizodu Let's playe na Half-Life 2. A moje nekonečné sledování videí pokračovalo.
-                Smusa potom taky s menšima odchylkama vydal i následující dvě DLC (datadisky) Half-Life 2 episode one 
-                a Half-Life 2 episode Two. Okolo této doby jsem i já začal 
-                aktivně hrát hry takže jsem začal s Half-Life 1, potom jsem
-                si koupil Black Mesu a pak jsem dohrál i Half-Life2 s oběma epizodami. Všechny z těchto her mě stále
-                baví a myslím si že jsou to jedny z nejikoničtějších her. 
 
-             </div>
-             <div id="half">
-              <img src="spsei.svg" alt="">
-          </div>
-          <h1>O mě</h1>
-          <div class="col">
-            Jsem sedmnáctiletý student z České republiky
-          </div>
-      </div>
-      
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css" .css">
+  <link rel="stylesheet" href="domu.css" .css>
+  <title>Document</title>
+  <script src="js_library/jquery-3.6.0.js"></script>
+  <script src="js_library/scrollie/jquery.scrollie.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+  <script>
+    window.onload = () => {
+      AOS.init({
+        delay: 100, // values from 0 to 3000, with step 50ms
+        duration: 1000,// values from 0 to 3000, with step 50ms
+        offset: 50
+      });
+    };
+  </script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <script src="index.js"></script>
+  <div class="header">
+
+    <div id="logo_media">
+      <a href="index.html" class="logo"><img id="logo" src="spsei.svg" alt="logo"></a>
+    </div>
+    <div class="burger" onclick="funkce_burger(this)">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    <div class="header-left">
+      <nav id="odkazy">
+        <a class="btn" href="index.html">Domů</a>
+        <a class="btn" href="Half-Life.html">Half-Life</a>
+        <a class="btn" href="#Half-Life">Half-Life 2</a>
+        <a class="btn" href="#Half-Life">Half-Life 2 epizoda 1</a>
+        <a class="btn" href="#Half-Life">Half-Life 2 epizoda 2</a>
+        <a class="btn" href="#Half-Life">Half-Life: Alyx</a>
+      </nav>
+
+    </div>
+  </div>
+  <div class="main">
+    <h1>O projektu</h1>
+    <div class="col" data-aos="zoom-in" data-aos-offset="100">
+      Tuto webovou stránku vytvářím, protože mě celkově baví téma jaké se okolo herní
+      série Half-Life točí a celkově herní témata. O Half-Lifu jsem
+      se poprvé dozvěděl když můj starší brácha hral originalni Half-Life
+      z roku 1998 a od začátku jsem si ho zamiloval. Potom jsem ho viděl hrát i následující
+      datadisky a Half-Life 2. V té době jsem byl ještě malýtykže jsem tomu moc
+      nepřikládal nějakou váhu. Tu hru jsem vlastně ani nehrál, jenom jsem občas sledoval
+      bráchu jak ji hrál. V roce 2012 přišel zlom když na svůj Youtube kanál SmusaGames
+      nahál Smusa svojí legendární let's play sérii hry Black Mesa, což je fanouškovský remake
+      původního Half-Lifu. Od této doby jsem si celou sérii half life zamiloval o to více.
+      Skvělý gameplay a komentář Smusy mě jako malého neskutečně bavil. Smusovu Black mesu jsem
+      sledoval pořád dokola a o to více jsem byl šťastnější, když jsem zjistil že v létě roku 2014
+      vydal první epizodu Let's playe na Half-Life 2. A moje nekonečné sledování videí pokračovalo.
+      Smusa potom taky s menšima odchylkama vydal i následující dvě DLC (datadisky) Half-Life 2 episode one
+      a Half-Life 2 episode Two. Okolo této doby jsem i já začal
+      aktivně hrát hry takže jsem začal s Half-Life 1, potom jsem
+      si koupil Black Mesu a pak jsem dohrál i Half-Life2 s oběma epizodami. Všechny z těchto her mě stále
+      baví a myslím si že jsou to jedny z nejikoničtějších her.
+    </div>
+    <div id="half" data-aos="zoom-in">
+      <img src="spsei.svg" alt="">
+    </div>
+
+  </div>
+  <footer>
+    <div id="map">
+      <h2>Kde nás najdete</h2>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1179.8120554630693!2d18.293647566014474!3d49.83892258464955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4713e32fae8220cf%3A0x3553e27d9cafa031!2sSt%C5%99edn%C3%AD%20pr%C5%AFmyslov%C3%A1%20%C5%A1kola%20elektrotechniky%20a%20informatiky!5e0!3m2!1scs!2scz!4v1652988044353!5m2!1scs!2scz"style="border:0; width: 30%; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div></div>
+  </footer>
 </body>
+
 </html>

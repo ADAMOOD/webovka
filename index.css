@@ -5,14 +5,24 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   
 }
-
-
-.header {
+.header  {
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
   width: 100%;
+  margin-bottom: 20px;
 }
+/* footer section start*/
+footer{
+  overflow: hidden;
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+/*footer section end*/
 /*scrollbar*/
 body::-webkit-scrollbar
 {
@@ -108,6 +118,7 @@ float: left;
     mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));;
     mask-position: left top, left bottom;
     mask-size: 100%;
+    border-radius: 30px;
   
     
   }
@@ -121,12 +132,18 @@ float: left;
    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));;
    mask-position: left top, left bottom;
    mask-size: 100%;
+   border-radius: 30px;
   }
+/*#barney{
+  width: 50em;
+}*/
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  background-color: #dadada;
+    border-radius: 30px;
+    background-color:#f1f1f1;
+    margin: auto 4em;
   margin-bottom: 5rem;
   }
   /*background*/
@@ -140,6 +157,13 @@ float: left;
      text-align: center;
      display: inline-block;
     }
+    .img_fader{
+      width: 50%;
+      float: none;
+      margin: auto;
+      display: block;
+      height: max-content;
+    }
     .img_fadel{
       width: 50%;
       float: none;
@@ -152,6 +176,7 @@ float: left;
    mask-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));;
    mask-position: left top, left bottom;
    mask-size: 100%;
+   
       
     }
     .container{
@@ -171,7 +196,7 @@ float: left;
     .header a {
       float: none;
       display: block;
-      
+    
     }
 
     #odkazy
